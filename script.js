@@ -17,6 +17,7 @@ cover.addEventListener('transitionend', (event) => {
 });
 
 checkbox.addEventListener('change', () => {
+  checkbox.setAttribute('aria-checked', checkbox.checked.toString());
   if (checkbox.checked) {
     closedContent.style.visibility = 'hidden';
     openContent.style.display = 'none';

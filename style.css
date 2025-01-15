@@ -21,7 +21,7 @@ input {
 }
 
 .cover, .back-cover {
-  background-color: #588157; 
+  background-color: #588157;
   width: 100%;
   height: 100%;
   border-radius: 0 0 15px 15px;
@@ -30,6 +30,7 @@ input {
   align-items: center;
   justify-content: center;
   transform-origin: top center;
+  transform-style: preserve-3d;
 }
 
 .cover {
@@ -89,7 +90,7 @@ input {
 .mail {
   position: absolute;
   background-color: #fefae0;
-  margin: 10px 0 0 10px; 
+  margin: 10px 0 0 10px;
   width: 480px;
   height: 320px;
   border-radius: 15px;
@@ -142,4 +143,28 @@ input {
 
 .front-mail .date, .front-mail .time {
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  #checkbox-cover:checked ~ .letter {
+    transform: translateY(160px);
+  }
+
+  .cover p {
+    font-size: 30px;
+  }
+
+  .mail {
+    width: 90%;
+    max-width: 400px;
+    margin: 15px 0 0 18px;
+  }
+
+  .front-mail p {
+    font-size: 14px;
+  }
+
+  .front-mail .event {
+    font-size: 18px;
+  }
 }
