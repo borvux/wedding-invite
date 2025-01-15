@@ -1,0 +1,17 @@
+{
+  "short_name": "Wedding Invitation",
+  "name": "Wedding Invitation",
+  "id": "/",
+  "icons": [
+    {
+      "src": "rings.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fefae0",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#588157"
+}
